@@ -1,0 +1,3349 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;	
+    font-size: 100%;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img { max-width: 100%; }
+ul { list-style: none;}
+a { text-decoration: none;}
+h2 {font-size: 1.5em; color: #333;}
+p {color: #465459;}
+body{background-color: #f7f6f3;}
+
+/*BOTÃO DO TOPO*/
+.linha-top {
+    height: 5px;
+    background-image: linear-gradient(to right, #00BD9D, #19FFD8, #00BD9D);
+
+}
+
+.cabecalho {
+    width: 100%;
+    height: 130px;
+    background: #fff;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding: 25px 0 5px 0;
+}
+
+/*BOTÃO DO MENU*/
+.btn-menu {
+    position: absolute;
+    top: 28px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.btn-menu > div {
+    width: 30px;
+    height: 5px;
+    background: #465459;
+    margin: 4px 0px;
+    transition: all 0.4s linear;
+}
+
+/*bontão de fechar*/
+.btn-close {
+    font-size: 2em;
+    color: #fff;
+    float: right;
+    cursor: pointer;
+    margin: 2% 3% 0 0;
+}
+
+/*menu principal*/
+.menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.75);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 10px 2%;
+}
+
+.menu li a {
+    font-size: 1.8em;
+    color: #0BBFD4;
+    padding: 1.5% 3%;
+}
+
+.menu li a:hover {
+    color: #0A83CA;
+}
+
+
+.menu li span {
+    display: inline-flex;
+    margin-right: 8px;
+    font-size: 0.6em;
+}
+
+.search-box {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+
+}
+
+.search-box  input[type="search"] {
+    background: #fff url(../imagens/icons/search.png) 8px 6px no-repeat ;
+    border: solid 1px #ccc;
+    padding: 5px 4px 3px 30px;
+    width: 100%;
+    color: #ccc;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+
+.search-box  input[type="search"] {
+    color: transparent;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.search-box  input[type="search"]:focus {
+    -webkit-border: 1px solid #CCC;
+}
+
+
+/*ANIMAÇÂO DO BANNER*/
+.bnr-img {
+    transform: translateY(0);
+    opacity: 1;
+    animation-name: banner-img;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: -1s;
+
+}
+
+@keyframes banner-img {
+    0%, 40% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    70%, 100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/*===BANNER PRINCIPAL */
+.banner-princ {
+    width: 100%;
+    float: left;
+    background: #3A464A;
+}
+
+.banner-princ h2 {
+    text-align: center;
+    padding: 10px 4%;
+    font-size: 2em;
+    line-height: 35px;
+    color: rgb(156, 172, 178);
+}
+
+.bnr-img img {
+    display: block;
+    margin: auto;
+    width: 50%;
+
+}
+
+.text-banner2 p {
+    text-align: center;
+    padding: 5px 4% 15px 4%;
+    color: rgb(156, 172, 178);
+}
+
+.newslatter-form {
+    width: 100%;
+    float: left;
+    height: 180px;
+    background: rgb(70, 84, 89);
+}
+
+
+/*FORMULÁRIOS DE EMAIL*/
+.newslatter-form, .box-form {
+    background-color: #465459;
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(80, 96, 102,.7)  2px, transparent 1px);
+    border-top: 1px solid rgba(80, 96, 102,.7) ;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.newslatter-form form {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 0;
+
+}
+
+.newslatter-form  form input[type="email"] {
+    width: 100%;
+    margin-top: 15px;
+    padding: 8px;
+    border: 1px solid #FFF;
+}
+
+.newslatter-form  form input[type="submit"] {
+    width: 100%;
+    margin-top: 8px;
+    background: #fff url(../imagens/icons/icons.png) 10px no-repeat ;
+    background-color:3;
+    color:  #FFF;
+    padding: 4px 3px 4px 20px;
+    border-radius: 50px;
+    border: 5px solid #54656B;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.newslatter-form input[type="submit"]:hover {
+    background-color: #0A83CA;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+}
+
+.newslatter-form p {
+    text-align: center;
+    font-size: 0.7em;
+    padding: 8px 8% 2px 8%;
+    color: rgb(156, 172, 178);
+}
+
+.newslatter-form  input[type="email"]:focus {
+    border: 1px solid #F9C626;
+    background-color: #FAEABC;
+    color: #465459;
+
+}
+
+
+/*Esterização do formulário principal da página de artigos PAGINA 01*/
+/*FORMULÁRIOS DE EMAIL*/
+.box-form-pag01 {
+    background-color: #465459;
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(80, 96, 102,.7)  2px, transparent 1px);
+    border-top: 1px solid rgba(80, 96, 102,.7) ;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 270px;
+}
+
+.box-form-pag01  form {
+    position: relative;
+    width: 270px;
+    top: 10px;
+    margin: 0 auto;
+}
+
+.box-form-pag01 form input[type="email"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #FFF;
+}
+
+.box-form-pag01  form input[type="submit"] {
+    width: 100%;
+    margin-top: 8px;
+    background: #fff url(../imagens/icons/icons.png) 55px no-repeat ;
+    background-color:#0BBFD4;
+    color:  #FFF;
+    padding: 6px 3px 6px 30px;
+    border-radius: 50px;
+    border: 5px solid #54656B;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.box-form-pag01  input[type="submit"]:hover {
+    background-color: #0A83CA;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+}
+.box-form-pag01  input[type="email"]:focus {
+    border: 1px solid #F9C626;
+    background-color: #FAEABC;
+    color: #465459;
+}
+/*fim*/
+
+/*Esterização do formulário principal da página de artigos*/
+/*FORMULÁRIOS DE EMAIL*/
+.box-form {
+    background-color: #465459;
+    background-size: 10px 10px;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to right, rgba(80, 96, 102,.7)  2px, transparent 1px);
+    border-top: 1px solid rgba(80, 96, 102,.7) ;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 270px;
+}
+
+.box-form  form {
+    position: relative;
+    width: 270px;
+    top: 10px;
+    margin: 0 auto;
+}
+
+.box-form form input[type="email"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #FFF;
+}
+
+.box-form  form input[type="submit"] {
+    width: 100%;
+    margin-top: 8px;
+    background: #fff url(../imagens/icons/icons.png) 55px no-repeat ;
+    background-color:#0BBFD4;
+    color:  #FFF;
+    padding: 6px 3px 6px 30px;
+    border-radius: 50px;
+    border: 5px solid #54656B;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.box-form  input[type="submit"]:hover {
+    background-color: #0A83CA;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+}
+.box-form input[type="email"]:focus {
+    border: 1px solid #F9C626;
+    background-color: #FAEABC;
+    color: #465459;
+}
+/*fim*/
+
+.box-form-pag01  {
+    height: 230px;
+}
+
+.text-chamd-pag01 {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 4%;
+    margin-top: 30px;
+}
+
+.text-chamd-pag01 h2 {
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 0 4%;
+}
+
+.text-chamd-tx-pag01 span {
+    padding-right: 8px;
+}
+
+
+.text-chamd-tx-pag01 p {
+    display: block;
+    width:100%;
+    margin-top: 8px;
+    /*background: #ccc;*/
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+/*FIM*/
+
+.text-chamd {
+    display: block;
+    float: left;
+    width: 100%;
+    padding: 0 4%;
+    margin-top: 30px;
+}
+
+.text-chamd h2 {
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 0 4%;
+}
+
+.text-chamd-tx span {
+    padding-right: 8px;
+}
+
+
+.text-chamd-tx p {
+    display: block;
+    width:100%;
+    margin-top: 8px;
+    /*background: #ccc;*/
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/*CORPO DO SITE*/
+#top-space {
+    margin-top: 5px;
+}
+
+
+#cont-princ {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.art-princ {
+    width: 100%;
+    float: left;
+    padding: 20px 4% 0 4%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+}
+
+#art-p {
+    width: 100%;
+    float: left;
+    padding: 20px 4% 0 4%;
+    border-bottom: none;
+    padding-bottom: 50px;
+}
+
+.art-princ h1 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.art-princ h1 a {
+    color: #333;
+}
+
+.art-princ h1 a:hover {
+    color: #0A83CA
+}
+
+.art-princ p {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding-top: 15px;
+}
+
+/*Esterelização do texto da página dos artigos*/
+.pagina-art p {
+    text-align: left;
+    font-size: 1.2em;
+    line-height: 1.6em;
+    padding-top: 15px;
+}
+
+.art-princ p a {
+    color: #0a83ca;
+}
+
+.art-princ p a:hover {
+    color: #04509d;
+}
+
+
+.art-princ img {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin: 10px 2% 5px 0;
+
+}
+
+.img-art-01 img {
+    border-left: 8px solid #0BDEB5;
+}
+
+/*imagem do autor da pagina sobre*/
+#img-tony img {
+    display: block;
+    float: right;
+    max-width: 150px;
+    width: 100%;
+    margin-top: 25px;
+    /*    background: #ccc;*/
+}
+
+/*Esterelização do corpo da páginas de artigos*/
+.pagina-art h1 {
+    color: #465459;
+    padding: 0 2% 2% 2%;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+.pagina-art h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 0 2%;
+    color: #465459;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.pagina-art h3 {
+    margin-top: 30px;
+    color: #000;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.pagina-art p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    padding: 10px 2% 0 3%;
+
+}
+
+.link-parag {
+    color: #32c8ff;
+}
+
+.link-parag:hover {
+    color: #036dc7;
+}
+
+.pagina-art img {
+    width: 100%;
+    padding: 0 2%;
+}
+
+#img-art-02 img {
+    padding-top: 20px;
+}
+/*fim*/
+
+/*esterilização das listas da página(markting-digital)*/
+.pagina-art ul {
+    display: block;
+    width: 80%;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pagina-art ul li {
+    list-style: outside;
+    padding-top: 10px;
+    line-height: 1.5em;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.link-titulo ul li {
+    list-style: none;
+}
+
+.fa {
+    color: #ccc;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.tex-aspas {
+    display: block;
+    width: 75%;
+    text-align: left;
+    margin-left: 40px;
+    background-color: #eaeaea;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-left: 10px solid #c6c6c6;
+}
+
+.tex-aspas span {
+    display: block;
+    float: left;
+    font-size: 4em;
+    color:#c6c6c6; 
+    font-family: 'Ubuntu', sans-serif;
+}
+/*fin*/
+
+/*esterilização da pagina de ferramentas*/
+.ferramenta {
+    margin: 0 auto;
+    width: 90%;
+    padding: 0 2%;
+}
+
+.ferramenta h1 {
+    font-size: 1.9em;
+    color: #ea5858;
+    text-align: center;
+}
+
+.ferramenta p {
+    line-height: 1.5em;
+    font-size: 1em;
+    text-align: center;
+}
+
+.blk-01 h2, h4 {
+    text-align: center;
+}
+
+.blk-01 h2 {
+    color: #1f1f1f;
+    margin-top: 50px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.sub-tex {
+    border-bottom: 2px dotted #ccc; 
+    font: 1.3em;
+    font-weight:600;
+}
+
+.text {
+    display: block;
+    float: left;
+    width:100%;
+    margin-top: 20px;
+}
+
+.text p {
+    text-align: left;
+    padding-top: 20px;
+    margin-bottom: 60px;
+    border-bottom: 2px dotted #ccc;
+    padding-bottom: 40px;
+}
+
+.text h3 {
+    text-align: left;
+    font-size: 1.4em;
+    text-decoration:underline;
+    color: #32c8ff;
+    margin-top: 30px;
+}
+
+.image-secao img {
+    display: block;
+    width: 40%;
+    float: right;
+    margin-top: 10px;
+}
+
+/*caberçalho do pagina artigos 03*/
+.cabercalho-artigo {
+    display: block;
+    margin: 20px 0 20px 20px;
+
+}
+
+
+/*SIDEBAR*/
+.cl-direita {
+    width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.sobre-autor  {
+    width: 95%;
+    margin: 30px auto;
+    padding: 10px 1%;
+    background-color: #ecebea;
+    border: 1px solid #DDDCD8;
+}
+
+.sobre-autor h2 {
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
+    margin: 3px 12%;
+    padding-top: 3px 0;
+}
+.sobre-autor img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding: 5px 20px;
+
+}
+
+.sobre-autor p {
+    text-align: justify;
+    font-size: 1em;
+    padding: 10px 10px;
+}
+
+.sobre-autor p a {
+    color: #32c8ff;
+}
+
+.art-popls {
+    width: 95%;
+    float: left;
+    margin: 0 2%;
+    background-color: #ecebea;
+    border: 1px solid #DDDCD8;
+}
+
+.art-popls h2 {
+    background-color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    color: #939291;
+}
+
+.art-popls ul {
+    padding-left: 2%;
+}
+
+.art-popls ul li {
+    padding: 5px 0;
+    float: left;
+}
+
+.art-popls ul li p {
+    line-height: 1.5em;
+
+}
+
+.art-popls ul li  p {
+    color: #32c8ff;
+    width: 90%;
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.art-popls ul li a p:hover {
+    color: #04509d;
+    transition: all .7s ease;
+}
+
+.sobre-autor span {
+    margin-left: 05px;
+    color: #32c8ff;
+
+}
+
+.art-popls h2 span  {
+    margin-right: 10px;
+    color: #939291;
+}
+
+.art-popls li span {
+    margin: 35px 0 0 5px;
+    color: #939291;
+    float: left;
+}
+
+/*NEWSLATTER*/
+.newsletter {
+    width: 94%;
+    background-color: #F2F1EF;
+    margin: 20px 2%;
+    float: left;
+    border: 1px solid #DDDCD8;
+    padding-bottom: 20px;
+}
+
+
+.newsletter h3 {
+    background-color: #465459;
+    padding: 15px 1%;
+    font-size: 1.3em;
+    color: #fff;
+    text-align: center;
+}
+
+
+.newsletter p {
+    padding: 20px 15px;
+    font-size: 1em;
+    color: #465459;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.newsletter img {
+    display: block;
+    max-width: 245px;
+    width: 100%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.form form {
+    width: 225px;
+    margin: 0 auto;
+}
+
+
+.newsletter span {
+    padding-right: 8px;
+}
+
+
+.newsletter form input[type="email"] {
+    width: 100%;
+    margin-right: 1%;
+    margin-top: 10px;
+    padding: 10px 8px;
+    border: 1px solid #465459;
+    color: #465459;
+    background-color: #fff;
+    float: left;
+}
+
+.newsletter form input[type="email"]:focus {
+    border: 1px solid #F9C626;
+    background-color: #FAEABC;
+    color: #465459;
+}
+
+.newsletter button {
+    background: #fff url(../imagens/icons/icons.png) 25px no-repeat ;
+    width: 100%;
+    padding-left: 20px;
+    background-color: #0BBFD4;
+    border-radius: 50px;
+    border: 5px solid #54656B;
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+.newsletter button:hover {
+    background-color: #0A83CA;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+}
+
+#botao, .newsletter button p {
+    font-size: 1.2em;
+    color: #fff;
+    padding: 6px 3px 8px 3px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.fa-share {
+    padding-right: 5px;
+}
+
+/*esterelização da pagina de captura do site*/
+.back-img {
+    display: block;
+    position: relative;
+    height: 721px;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+.img-chamada {
+    background: rgba(248, 235, 167, 0.81);
+    padding: 20px 0;
+    height: 350px;
+    margin-top: -20px;
+}
+
+.img-chamada img {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+#form2 {
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+}
+
+.box-at-grts h1 {
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.box-at-grts  input[type="email"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #c1c0bc;
+    box-shadow: inset 1px 1px 7px #989797;
+}
+
+.box-at-grts  input[type="submit"] {
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px 0;
+    border-radius: 3px;
+    background-color: #fa830c; 
+}
+
+form .buttom {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+} 
+
+form .buttom:hover {
+    cursor: pointer;
+    background: #cb6806;
+}
+
+.box-at-grts form p {
+    padding-top: 10px;
+    color: #c1c0bc;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.box-at-grts  {
+    display: block;
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: -200px auto;
+    border: 5px dashed #fa830c;
+    background-color: #e6e4dc;
+    border-radius: 3px;
+}
+
+/*--ESTERELIZAÇÃO DA PAGINAÇÃO --*/
+.paginacao {
+    float: left;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.botao {
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background: #afafaf;
+    border: none;
+    font-size: 0.8em;
+}
+
+.botao-pont {
+    border: none;
+    padding: 3px;
+    background: transparent;
+}
+
+.botao:hover {
+    background: #00BD9D;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+    transition: 0.5s ease-in;
+}
+
+.botao:focus {
+    background: #00BD9D;
+}
+
+.botao:visited {
+    background: #00BD9D;
+}
+
+.botao:active {
+    background: #00BD9D;
+}
+
+.fa {
+    padding-right: 4px;
+}
+
+.rigth {
+    padding-left: 4px;
+}
+
+.botao a {
+    color: #ffe;
+}
+
+.botao a:focus {
+    background: #00BD9D;
+}
+
+.botao a:visited {
+    background: #00BD9D;
+}
+
+.botao a:active {
+    background: #00BD9D;
+}
+
+/*SOCIAL ICONS*/
+.social-cont {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid #DDDCD8;
+    background-color: #FFF;
+    margin-top: 50px;
+}
+
+.social-alinhament {
+    display: block;
+    width: 211px;
+    margin: 35px auto;
+}
+
+.social-cont img {
+    display: none;
+}
+
+
+.social-icons a {
+    color: #fff;
+    margin-left: 12px;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+    padding: 10px 11px;
+}
+
+.btn-twitter {
+    background-color: #54a4d6;
+    padding: 10px 11px;
+}
+
+.btn-google {
+    background-color: #d73d32;
+    padding: 10px 11px;
+}
+
+.btn-email {
+    background-color: #868686;
+    padding: 10px 11px;
+}
+
+.btn-g:hover {
+    border-radius: 50px;
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+}
+
+/*pagina de verificação de email*/
+.copo-d-pag {
+    widows: 100%;
+    padding: 0 4%;
+}
+
+#logo1 img {
+    position: relative;
+    max-width: 100%;
+    width: 75%;
+    top: 20px;
+    left: 12%;
+}
+
+.bloc-00 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header#texto  {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+}
+
+#linha-final {
+    border-bottom: 1px solid #ccc;
+}
+
+.bloc-00 h1 {
+    font-size: 1.7em;
+    padding-top: 40px;
+}
+
+.bloc-00 h2 {
+    font-size: 1.4em;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.bloco {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    padding-top: 10px;
+    /*    background: #ccc;*/
+}
+
+.bloco h1 {
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+    font-size: 2.5em;
+    color: #fff;
+    border-radius: 50px;
+    background-color: #00bd9d;
+    border: 7px solid rgba(245, 80, 0, 0.62);
+}
+
+.bloco h2 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.bloco p {
+    text-align: left;
+    font-size: 1.2em;
+    padding: 4px 2%;
+}
+
+.bloco img {
+    max-width: 100%;
+    width: 50%;
+    margin-left: 23.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.emails {
+    display: block;
+    max-width: 150px;
+    padding: 4% 2%;
+    margin: 20px auto;
+}
+
+.img-emails {
+    width: 100%;
+    padding: 10px 2%;
+}
+
+
+/*RODAPÉ*/
+.rodape {
+    width: 100%;
+    float: left;
+    background-color: #465459;
+    padding: 20px 8% 50px 8%;
+}
+
+.rodape p {
+    text-align: center;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+/*CAMPO DE COMENTÁRIOS DO FACEBOOK*/
+#plugins-comentario {
+    margin: 40px auto 20px auto;
+    max-width: 1100px;
+    width: 80%;
+}
+
+.plugin-pag {
+    padding: 0 15%;
+}
+
+/*	pagina de contatos */
+/*FORMULARIOS*/
+.contato {
+    max-width: 100%;
+    padding: 10px 4% 10px 4%;
+
+
+}
+
+.contato h2 {
+    font-size: 2.5em;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.contato span {
+    display: block;
+    color: #465459;
+    padding-top: 25px;
+    text-align: center;
+}
+
+form input {
+    /*		max-width: 280px;*/
+    width: 100%;
+    padding: 6px;
+    margin-top: 6px;
+    border: 1px solid #DDDCD8;
+    outline: none;
+    -moz-outline: none;
+}
+
+form input:focus {
+    background-color: #f7f6f3;
+    border: 1px solid #DDDCD8;
+
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDDCD8;
+    outline: none;
+    -moz-outline: none;
+}
+
+.bot {
+    margin: 0 auto;
+}
+
+form .btn {
+    background: #fff url(../imagens/icons/icons.png) 35px no-repeat;
+    max-width: 100%;
+    width: 200px;
+    background-color: #0BBFD4;
+    border-radius: 50px;
+    padding-left: 35px;
+    border: 5px solid #a4a6a7;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+
+form .btn:hover {
+    background-color: #0A83CA;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+}
+
+/*esterelização do box de captura de email*/
+.box-newsllater {
+    display: block;
+    width: 250px;
+    height: 360px;
+    margin: 50px auto;
+    background-color: #fff;
+    border: 1px solid #465459;
+}
+
+.box-newsllater h3 {
+    background: #465459;
+    padding: 15px;
+    margin-top: 0px;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #fff;
+}
+
+.box-newsllater span {
+    padding-right: 10px;
+}
+
+.box-newsllater p {
+    text-align: center;
+    padding: 25px 0;
+}
+
+#alinha-email form {
+    display: block;
+    width: 230px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.box-newsllater form input[type="email"] {
+    width: 100%;
+    padding: 10px 0 10px 8px;
+}
+
+.box-newsllater form input[type="email"]:focus {
+    border: 1px solid #F9C626;
+    background-color: #FAEABC;
+    color: #465459;
+}
+
+.box-newsllater #botao {
+    background: #fff url(../imagens/icons/icons.png) 14px no-repeat ;
+    width: 100%;
+    padding-left: 20px;
+    background-color: #0BBFD4;
+    border-radius: 50px;
+    border: 5px solid #54656B;
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.box-newsllater button#botao p {
+    text-align: center;
+    font-size: 1em;
+    padding: 5px 0 5px 10px;
+    margin: 0;
+    color: #fff;
+    font-weight: 600;
+}
+.box-newsllater #botao:hover {
+    background-color: #0A83CA;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    box-shadow: 0px 0px 0px 1px rgba(251,250,243,0.3);
+    -webkit-transition: All 0.7s ease;
+    -moz-transition: All 0.7s ease;
+    -o-transition: All 0.7s ease;
+    -ms-transition: All 0.7s ease;
+    transition: All 0.7s ease;
+
+}
+
+/*  botões de compartilamento das redes sociais*/
+.social {
+    position: fixed;
+    left: 0;
+    top: 270px;
+    z-index: 2000;
+}
+
+.social ul li a {
+    display: inline-block;
+    color: #Fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    -transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.social ul li .icon-facebook {background:#3b5998; }
+.social ul li .icon-twitter {background:#00abf0;}
+.social ul li .icon-google-plus {background:#d95232;}
+.social ul li .icon-mail3 {background:#666; }
+
+.social ul li .icon-facebook:hover {background: rgba(59, 89, 152, 0.27); color: #3b5998; padding: 10px 30px;}
+.social ul li .icon-twitter:hover {background:rgba(0, 171, 240, 0.27); color: #00abf0; padding: 10px 30px;}
+.social ul li .icon-google-plus:hover {background:rgba(217, 82, 50, 0.27); color: #d95232; padding: 10px 30px;}
+.social ul li .icon-mail3:hover {background:rgba(102, 102, 102, 0.27); color: #666; padding: 10px 30px;}
+
+@media screen and (min-width: 350px) {
+    .logo img {
+        width: 45%;
+        padding: 15px 0 10px 0;
+    }
+
+    #logo1 img {
+        width: 65%;
+        left: 18%;
+    }
+}
+@media screen and (min-width: 400px) {
+    #linha-final {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .emails {
+        height: 100px;
+    }
+}
+/*SMALL DEVICES - SMARTPHONES*/
+@media screen and (min-width: 480px) {
+    .search-box {
+        width: 250px;
+    }
+
+    .cabecalho {
+        width: 100%;
+        height: 145px;
+    }
+
+    .logo img {
+        max-width: 200px;
+        margin-top: 5px;
+    }
+
+    .btn-menu {
+        top: 35px;
+        left: 30px;
+    }
+
+    .newsletter-form form {
+        margin: 0 auto;
+        width:270px;
+    }
+
+    .newsletter-form form input[type="submit"] {
+        background: #fff url(../imagens/icons/icons.png) 60px no-repeat ;
+        background-color: #0BBFD4;
+        padding: 4px 10px 4px 30px;
+    }
+
+    .banner-princ {
+        width: 100%;
+        background: #3A464A;
+    }
+
+    .alin-princ {
+        max-width: 480px;
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .banner-princ h2 {
+        text-align: center;
+        padding: 25px 4% 10px 4%;
+        font-size: 2em;
+        line-height: 35px;
+        color: rgb(156, 172, 178);
+    }
+
+    .bnr-img img {
+        width: 40%;
+    }
+
+    .text-banner2 p {
+        margin: 0 auto;
+        width: 60%;
+        padding: 5px 4% 25px 4%;
+    }
+
+    .newslatter-form form {
+        width: 300px;
+    }
+
+    .newslatter-form form input[type="submit"] {
+        margin-top: 8px;
+        background: #fff url(../imagens/icons/icons.png) 55px no-repeat ;
+        background-color:#0BBFD4;
+        padding: 8px 3px 8px 20px;
+    }
+
+    .newslatter-form p {
+        font-size: 0.8em;
+    }
+
+    /*	banner da de captura de emial principal*/
+    .box-form {
+        height: 230px;
+    }
+
+    .text-chamd {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .text-chamd h2 {
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: 1.7em;
+        font-weight: 700;
+        padding-left: 15px;
+    }
+
+    .text-chamd span {
+        padding-right: 8px;
+    }
+
+    .text-chamd-tx {
+        display: block;
+        float: center;
+        width:100%;
+        margin-top: 12px;
+
+    }
+
+    .text-chamd-tx p {
+        text-align: center;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+    .box-form form {
+        position: relative;
+        width: 300px;
+        top: 10px;
+        margin: 0 auto;
+    }
+
+    .box-form form input[type="email"] {
+        width: 100%;
+        float: left;
+        margin-top:7px;
+        padding: 9px 0 9px 5px ;
+    }
+
+    .box-form form input[type="submit"] {
+        width: 100%;
+        float: right;
+        margin-top: 8px;
+        background: #fff url(../imagens/icons/icons.png) 65px no-repeat ;
+        padding: 6px 0px 6px 26px;
+        font-size: 1.2em;
+        background-color:#0BBFD4;
+    }
+    /* =====fim do banner da de captura de emial principal====*/
+
+    /*	banner da pagina de captura de emial principal*/
+    .box-form {
+        height: 230px;
+    }
+
+    .box-form-pag01 {
+        height: 230px;
+    }
+
+    .text-chamd-pag01 {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .text-chamd-pag01 h2 {
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: 1.7em;
+        font-weight: 700;
+        padding-left: 15px;
+    }
+
+    .text-chamd-pag01 span {
+        padding-right: 8px;
+    }
+
+    .text-chamd-tx-pag01 {
+        display: block;
+        float: center;
+        width:100%;
+        margin-top: 12px;
+
+    }
+
+    .text-chamd-tx-pag01 p {
+        text-align: center;
+        color: #fff;
+        font-size: 0.8em;
+    }
+
+    .box-form-pag01 form {
+        position: relative;
+        width: 300px;
+        top: 10px;
+        margin: 0 auto;
+    }
+
+    .box-form-pag01 form input[type="email"] {
+        width: 100%;
+        float: left;
+        margin-top:7px;
+        padding: 9px 0 9px 5px ;
+    }
+
+    .box-form-pag01 form input[type="submit"] {
+        width: 100%;
+        float: right;
+        margin-top: 8px;
+        background: #fff url(../imagens/icons/icons.png) 65px no-repeat ;
+        padding: 6px 0px 6px 26px;
+        font-size: 1.2em;
+        background-color:#0BBFD4;
+    }
+    /* =====fim do banner da de captura de emial principal====*/
+
+    .sobre-autor img {
+        width: 50%;
+        padding: 5px 20px;
+    }
+
+    .form form {
+        width: 250px;
+    }
+
+    .social-alinhament {
+        max-width: 480px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-icons  {
+        display: block;
+        float: right;
+        width: 200px;
+        padding-top: 10px;
+    }
+
+    .social-cont img {
+        display: block !important;
+        max-width: 100%;
+        margin: 25px 0;
+    }
+
+    .art-popls li span {
+        margin: 25px 0 0 5px;
+        color: #939291;
+        float: left;
+    }
+
+    /*    botões das redes sociais*/
+    .social-icons  {
+        display: block;
+        float: right;
+        width: 211px;
+        padding-top: 10px;
+    }
+
+    /*	pagina de contatos */
+    /*FORMULARIOS*/
+    form .btn {
+        margin-left: 90px;
+    }
+
+    /*    esterelização do logo da pagina de verificação*/
+    #logo1 img {
+        width: 65%;
+        left: 18%;
+    }
+
+    /*    esterelização do box de captura de email*/
+    .box-newsllater {
+        display: block;
+        width: 400px;
+        height: 300px;
+    }
+
+    #alinha-email form {
+        display: block;
+        width: 300px;
+
+    }
+
+    .box-newsllater #botao {
+        background: #fff url(../imagens/icons/icons.png) 30px no-repeat;
+        width: 100%;
+        padding-left: 20px;
+        background-color: #0BBFD4;
+    }
+
+}
+
+
+/*SMALL DEVICES - SMARTPHONES 500x960*/
+@media screen and (min-width: 500px) {
+
+    #logo1 img {
+        width: 50%;
+        left: 25%;
+    }
+
+    .emails {
+        max-width: 300px;
+        margin-top: 30px;
+    }
+
+    .img-emails {
+        display: block;
+        float: left;
+        width: 33%;
+        padding: 0 2%;
+    }
+}
+
+/*SMALL DEVICES - SMARTPHONES 600x960*/
+@media screen and (min-width: 600px) {
+
+    #logo1 img {
+        width: 45%;
+        left: 27%;
+    }
+
+    .emails {
+        max-width: 400px;
+        margin-top: 30px;
+    }
+
+    .img-emails {
+        display: block;
+        float: left;
+        width: 33%;
+        padding: 0 2%;
+    }
+
+    #linha-final {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .emails {
+        height: 120px;
+    }
+}
+
+/*SMALL DEVICES - SMARTPHONES 640x960*/
+@media screen and (min-width: 640px) {
+    .search-box {
+        width: 270px;
+    }
+
+    .social-alinhament {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-icons  {
+        display: block;
+        float: right;
+        width: 211px;
+        padding-top: 10px;
+    }
+
+    .social-cont img {
+        margin: 25px 0;
+    }
+
+    /*	pagina de contatos */
+    /*FORMULARIOS*/
+    .contato {
+        max-width: 100%;
+        padding: 10px 10% 10px 10%;
+    }
+
+    form .btn {
+        margin-left: 120px;
+    }
+
+    /*	banner da página de captura de emial principal*/
+    .box-form {
+        height: 180px;
+    }
+
+    .box-form-pag01 {
+        height: 170px;
+    }
+
+    .text-chamd {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .text-chamd h2 {
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: 1.4em;
+        font-weight: 600;
+        padding-left: 15px;
+        padding-bottom: 10px;
+
+    }
+
+    .text-chamd span {
+        padding-right: 8px;
+    }
+
+    .text-chamd-tx {
+        display: block;
+        width: 100%;
+
+    }
+
+    .text-chamd-tx p {
+        text-align: center;
+        color: #fff;
+        font-size: 1em;
+    }
+
+    .box-form form {
+        position: relative;
+        width: 80%;
+        top: 10px;
+        margin: 0 auto;
+    }
+
+    .box-form form input[type="email"] {
+        width: 51%;
+        float: left;
+        margin-top:7px;
+        padding: 9px 0 9px 5px ;
+    }
+
+    .box-form form input[type="submit"] {
+        width: 48%;
+        float: right;
+        margin-top: 0px;
+        background: #fff url(../imagens/icons/icons.png) 45px no-repeat ;
+        padding: 6px 0px 6px 22px;
+        font-size: 1.2em;
+        background-color:#0BBFD4;
+    }
+    /* =====fim do banner da de captura de emial principal====*/
+
+    /*	banner da de captura de emial principal*/
+    .box-form {
+        height: 180px;
+    }
+
+    .text-chamd-pag01 {
+        display: block;
+        float: left;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .text-chamd-pag01 h2 {
+        text-align: center;
+        display: block;
+        color: #fff;
+        font-size: 1.4em;
+        font-weight: 700;
+        padding-left: 15px;
+        padding-bottom: 10px;
+    }
+
+    .text-chamd-pag01 span {
+        padding-right: 8px;
+    }
+
+    .text-chamd-tx {
+        display: block;
+        width: 100%;
+    }
+
+    .text-chamd-tx-pag01 p {
+        text-align: center;
+        color: #fff;
+        font-size: 1em;
+    }
+
+    .box-form-pag01 form {
+        position: relative;
+        width: 80%;
+        top: 10px;
+        margin: 0 auto;
+    }
+
+    .box-form-pag01 form input[type="email"] {
+        width: 51%;
+        float: left;
+        margin-top:7px;
+        padding: 9px 0 9px 5px ;
+    }
+
+    .box-form-pag01 form input[type="submit"] {
+        width: 48%;
+        float: right;
+        margin-top: 4px;
+        background: #fff url(../imagens/icons/icons.png) 45px no-repeat ;
+        padding: 6px 0px 6px 22px;
+        font-size: 1.2em;
+        background-color:#0BBFD4;
+    }
+    /* =====fim do banner da de captura de emial principal====*/
+
+    .pagina-art h2 {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    .art-popls li span {
+        margin: 25px 0 0 5px;
+        color: #939291;
+        float: left;
+    }
+
+    /*CAMPO DE COMENTÁRIOS DO FACEBOOK*/
+    #plugins-comentario {
+        float: right;
+        margin-right: 50px;
+        max-width: 1100px;
+        width: 85%;
+    }
+
+    .plugin-pag {
+        padding: 0 25%;
+    }
+
+    /*    esterilizar a página de ferramentas */
+    .image-secao img {
+        width: 35%;
+        margin-top: 60px;
+        margin-left: 4px;
+    }
+
+    /*    esterelização da pagina de verifcação*/
+    #logo1 img {
+        width: 35%;
+        left: 32%;
+    }
+
+}
+
+
+/* SMALL DEVICES - TABLETS*/
+@media screen and (min-width: 768px) {
+    .alinhamento {
+        max-width: 768px;
+        width: 100%;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .btn-close {
+        display: none;
+    }
+
+    .logo img {
+        max-width: 220px;
+        height: 50px;
+        float: left;
+        margin-top: 18px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+        padding: 0;
+    }
+
+    .cabecalho form {
+        display: block;
+        margin-top: 10px;
+        float: right;
+    }
+
+    .search-box {
+        display: block;
+        width: 40px;
+        height: 33px;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .search-box  form {
+        margin-top: 1px;
+    }
+
+
+    .search-box form input[type="search"] {
+        background: #fff url(../imagens/icons/search.png) 8px 6px no-repeat ;
+        border: solid 1px #ccc;
+        width: 33px;
+        height: 33px;
+        color: #ccc;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        transition: all .5s;
+    }
+
+    .search-box form input[type="search"]:focus {
+        width: 120px;"
+        padding-left: 32px;
+        color: #000;
+        background-color: #fff;
+        cursor: auto;
+    }
+
+    /*	Menu do Principal*/
+    .cabecalho {
+        height: 94.5px;
+    }
+
+    #menu-princ {
+        position: relative;
+        width: 50%;
+        margin-top: 34px;
+        height: 20px ;
+        float: right ;
+        display: block !important;
+        background: transparent;
+    }
+
+    .menu ul {
+        width: 100%;
+        float: right;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin: 0px 3px 0px 0;
+        padding-left: 5px;
+    }
+
+    .menu li a {
+        font-size: 1em;
+        color: #0BBFD4;
+        padding: 1% 0%;
+    }
+
+    .menu li a:hover {
+        background-color: transparent;
+        color: #0A83CA;
+    }
+
+    .menu li span {
+        display: inline-flex;
+        margin-right: 8px;
+        font-size: 0.6em;
+    }
+
+    /* banner */
+    .alin-banner {
+        max-width: 768px;
+        width: 98%;
+        height: 170px;
+        margin: 0 auto;
+    }
+
+    .text-banner {
+        float: left;
+        width: 33%;
+
+    }
+
+    .banner-princ h2 {
+        text-align: left;
+        padding: 10px 0;
+        margin-top: 18px;
+        font-size: 1.7em;
+        line-height: 28px;
+        color: rgb(156, 172, 178);
+    }
+
+    .bnr-img {
+        float: left;
+        width: 32%;
+        margin-top: 27px;
+
+    }
+
+
+    .bnr-img img {
+        display: block;
+        margin: auto;
+        width: 90%;
+
+    }
+
+    .text-banner2 p {
+        float: right;
+        margin-top: 45px;
+        width: 33%;
+        text-align: center;
+        padding: 5px 0 15px 4%;
+        color: rgb(156, 172, 178);
+    }
+
+    /*		FORMULARIO DE EMAIL*/
+    .newslatter-form {
+        height: 90px;
+
+    }
+
+    .alin-newslatter {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .newsletter button p {
+        font-size: 1em;
+        color: #fff;
+        padding: 7px 0px 9px 14px ;
+       
+    }
+
+    .newslatter-form form {
+        float: left;
+        width: 424px;
+        margin: 0 auto;
+        float: right;
+
+    }
+
+    .newslatter-form form input[type="email"] {
+        width: 220px;
+        float: left;
+        margin-top: 15px;
+        padding-right: 5px;
+    }
+
+    .newslatter-form  form input[type="submit"] {
+        width: 200px;
+        float: right;
+        padding: ;
+        margin-top: 9px;
+        background: #fff url(../imagens/icons/icons.png) 5px no-repeat ;
+        background-color:#0BBFD4;
+    }
+
+
+    .newslatter-form p {
+        text-align: center;
+        font-size: 0.7em;
+        padding: 35px 8% 2px 0;
+        color: rgb(156, 172, 178);
+    }
+
+    .box-form {
+        height: 110px;
+    }
+
+    .text-chamd {
+        display: block;
+        float: left;
+        width: 36%;
+        padding: 0 0;
+        margin-top: 40px;
+        /*        background: #333;*/
+    }
+
+
+
+    .box-form form {
+        width: 39%;
+        margin-top: 20px;
+        float: right;
+        /*        background: #ccc;*/
+    }
+
+    .box-form form input[type="email"] {
+        width: 51%;
+        float: left;
+        margin-top:7px;
+        padding-right: 2px;
+    }
+
+    .box-form form input[type="submit"] {
+        width: 49%;
+        float: right;
+        margin-top: 4px;
+        background: #fff url(../imagens/icons/icons.png) 10px no-repeat ;
+        padding: 10px 0px 10px 22px;
+        font-size: 0.8em;
+        background-color:#0BBFD4;
+    }
+    /*    FIM*/
+
+    /*Esterelização do corpo da páginas de artigos*/
+    .pagina-art h2 {
+        padding: 0;
+    }
+
+    /*	banner da de captura de emial principal da pagina forma-deganhar-dinheiro*/
+    .box-form-pag01 {
+        height: 110px;
+    }
+
+    .text-chamd-pag01 {
+        display: block;
+        float: left;
+        width: 30%;
+        padding: 0 0;
+        margin-top: 40px;
+        /*background: #333;*/
+    }
+
+    .text-chamd-pag01 h2 {
+        text-align: left;
+        display: block;
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: 500;
+        padding: 0;
+    }
+
+    .text-chamd-tx-pag01 {
+        display: block;
+        float: left;
+        width: 24%;
+        margin-top: 35px;
+        padding-right: 5px;
+        /*background: #ccc;*/
+    }
+
+    .text-chamd-tx-pag01 p {
+        text-align: center;
+        color: #fff;
+        font-size: 0.7em;
+
+    }
+
+    .box-form-pag01 form {
+        width: 45%;
+        margin-top: 20px;
+        float: right;
+        /*background: #ccc;*/
+    }
+
+    .box-form-pag01 form input[type="email"] {
+        width: 51%;
+        float: left;
+        margin-top:7px;
+        padding-right: 2px;
+    }
+
+    .box-form-pag01 form input[type="submit"] {
+        width: 49%;
+        float: right;
+        margin-top: 4px;
+        background: #fff url(../imagens/icons/icons.png) 20px no-repeat ;
+        padding: 10px 0px 10px 22px;
+        font-size: 0.8em;
+        background-color:#0BBFD4;
+    }
+    /*    FIM*/
+
+
+    .main-cont {
+        max-width: 768px;
+        width: 100%;
+        padding-top: 10px;
+        margin: 0 auto;
+
+    }
+
+    .pagina-art {
+        padding-top: 12px;
+    }
+
+    #cont-princ {
+        width: 68%;
+        float: right;
+        padding: 0 2%;	
+    }
+
+    .art-princ {
+        width: 100%;
+        float: right;
+        padding: 15px 0 12px 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 50px;
+    }
+
+    .art-princ img {
+        width: 200px;
+        height: 100px;
+        float: left;
+        margin: 15px 10px 0 0;
+    }
+
+    /*ESTERELIZAR IMAGEM DA PAGINA DE POST*/
+    #img-art-01 img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin: 20px 20px 0 0;
+    }
+
+    .art-princ h1 {
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+
+    .art-princ p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding: 10px 2% 0 2%;
+    }
+
+    /*Esterelização do texto da página dos artigos*/
+    .pagina-art p {
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        padding-top: 15px;
+        padding: 15px 0;
+    }
+
+    .pagina-art h1 {
+        font-weight: 600;
+        font-size: 1.5em;
+        padding: 0;
+    }
+
+    .pagina-art h2 {
+        font-size: 1.4em;
+    }
+
+    .pagina-art img {
+        width: 100%;
+        padding: 0;
+    }
+
+    /*    esterilizar a página de ferramentas */
+    .ferramenta {
+        max-width: 768px;
+        width: 80%;
+    }
+
+    .image-secao img {
+        width: 40%;
+        margin-top: 60px;
+        margin-left: 4px;
+    }
+
+    .ferramenta h1 {
+        font-size: 2.5em;
+    }
+
+    .ferramenta p {
+        line-height: 1.5em;
+        font-size: 1.2em;
+    }
+
+    .blk-01 h2 {
+        margin-top: 60px;
+        font-size: 2.5em;
+    }
+
+    /*SIDEBAR*/
+    .cl-direita{
+        width: 31%;
+        float: left;
+        margin-bottom: 50px;
+    }
+
+    .sobre-autor  {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px 1%;
+    }
+
+    .sobre-autor h2 {
+        text-align: center;
+        font-size: 1.2em;
+        border-bottom: 2px solid #ccc;
+        border-top: 2px solid #ccc;
+        margin: 3px 12%;
+        padding-top: 3px 0;
+    }
+    .sobre-autor img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding: 5px 20px;
+
+    }
+
+    .sobre-autor p {
+        text-align: left;
+        font-size: 1em;
+        line-height: 22px;
+        padding: 10px 10px;
+    }
+
+    .art-popls {
+        width: 100%;
+        float: left;
+        margin: 10px 0;
+        border: 1px solid #DDDCD8;
+    }
+
+    .art-popls h2 {
+        padding: 10px 2%;
+        font-size: 1.3em;
+    }
+
+    .art-popls ul {
+        padding: 10px 4%;
+        float: left;
+    }
+
+    .art-popls ul li {
+        color: #32c8ff;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .art-popls li a p {
+        font-size: 1em;
+        line-height: 25px;
+        padding-left: 10px;
+    }
+
+    .art-popls li span {
+        margin-top: 45px;
+        color: #939291;
+        float: left;
+        font-size: 0.9em;
+    }
+
+    /*	newslatter e-amil e presente e-book*/
+    .newsletter img {
+        display: block;
+        width: 70%;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    /*	newslatter e-amil*/
+    .newsletter {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .newsletter h3 {
+        padding: 15px 2% 15px 3%;
+        font-size: 0.9em;
+        text-align: left;
+    }
+
+    .newsletter p {
+        width: 95%;
+        padding: 10px 2% 10px 0;
+        text-align: center;
+        float: right;
+        font-size: 1em;
+
+    }
+
+    /*	formulario de email*/
+    .newsletter form {
+        width: 200px;
+    }
+
+    .newsletter button {
+        background: #fff url(../imagens/icons/icons.png) 18px no-repeat ;
+        background-color: #0BBFD4;
+        padding-right: 22px;
+    }
+
+    .social-alinhament {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /*--ESTERELIZAÇÃO DA PAGINAÇÃO --*/
+    .paginacao {
+        float: left;
+        margin-top: 20px;
+    }
+
+    .botao {
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+        color: #fff;
+        background: #afafaf;
+        border: none;
+    }
+
+    /*CAMPO DE COMENTÁRIOS DO FACEBOOK*/
+    #plugins-comentario {
+        float: right;
+        margin-right: 27px;
+        max-width: 1100px;
+        width: 90%;
+    }
+
+    .plugin-pag {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .social-icons  {
+        display: block;
+        float: right;
+        width: 211px;
+        padding-top: 10px;
+    }
+
+    .social-cont img {
+        margin: 25px 0;
+    }
+
+    /*	pagina de contatos */
+    /*FORMULARIOS*/
+    .contato {
+        max-width: 100%;
+        padding: 0 0 10px 0;
+
+
+    }
+
+    .contato h2 {
+        font-size: 2.5em;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: justify;
+    }
+
+    .contato span {
+        display: block;
+        color: #465459;
+        padding-top: 25px;
+        text-align: left;
+    }
+
+    form input {
+        max-width: 280px;
+        width: 100%;
+        padding: 6px;
+        margin-top: 6px;
+        border: 1px solid #DDDCD8;
+        outline: none;
+        -moz-outline: none;
+    }
+
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #DDDCD8;
+        outline: none;
+        -moz-outline: none;
+    }
+
+    form .btn {
+        max-width: 200px;
+        width: 100%;
+        background-color: #0BBFD4;
+        border-radius: 50px;
+        border: 5px solid #a4a6a7;
+        float: left;
+        margin-top: 10px;
+        margin-left: 2px;
+        cursor: pointer;
+    }
+
+    /*    estelização da pagina de verificação*/
+    #logo1 img {
+        width: 35%;
+        top: 20px;
+        left: 32%;
+    }
+
+    .copo-d-pag {
+        max-width: 768px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .bloco {
+        display: block;
+        width: 33%;
+        float: left;
+    }
+
+    #texto h1 {
+        font-size: 2.5em;
+    }
+
+    .emails {
+        float: left;
+        max-width: 768px;
+        height: 150px;
+        margin-top: 70px;
+
+    }
+
+    .img-emails {
+        display: block;
+        float: left;
+        width: 33%;
+        padding: 5px 9.55%;
+        border-top: 1x solid #fff;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /*    esterelização do box de captura de email*/
+    .box-newsllater {
+        display: block;
+        width: 100%;
+        height: 250px;
+        border: 1px solid  #9cacb2;
+    }
+
+    #alinha-email form {
+        display: block;
+        width:100%;
+        padding: 0 2%;
+    }
+
+    .box-newsllater p {
+        text-align: center;
+        margin: 10px 4%;
+    }
+
+    .box-newsllater form input[type="email"] {
+        float: left;
+        max-width: 54%;
+        padding: 15px 0 15px 8px;
+        margin: 13px 3px 0 0;
+    }
+
+    .box-newsllater #botao {
+        background: #fff url(../imagens/icons/icons.png) 10px no-repeat ;
+        width: 44%;
+        padding-left: 25px;
+        background-color: #0BBFD4;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .box-newsllater button#botao p {
+        padding: 2px;
+        font-size: 1em;
+        font-weight: 600;
+        color: #fff;
+    }
+
+
+}
+
+/*SMALL DEVICES - tablets*/
+@media screen and (min-width: 800px ){
+    .newsletter p {
+        width: 95%;
+        padding: 10px 0 10px ;
+        text-align: left;
+        float: right;
+    }
+
+}
+
+/*SMALL DEVICES - tablets e alguns notbooks*/
+@media screen and (min-width: 1024px ){
+    .alinhamento {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #menu-princ {
+        width: 36%;
+        float: right;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        margin-left: 3px;
+        padding-left: 5px;
+    }
+
+    .menu li a {
+        display: block;
+        color: #0BBFD4;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
+    }
+
+    .menu li a:hover {
+        color: #0A83CA;
+    }
+
+    .search-box {
+        display: block;
+        width: 33px;
+        height: 33px;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .search-box  form {
+        margin-top: 1px;
+    }
+
+    .search-box form input[type="search"]:focus {
+        width: 220px;
+    }
+
+    /*BANNER DO SITE*/
+    .alin-banner {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .banner-princ h2 {
+        padding: 17px 0;
+        margin-top: 17px;
+        line-height: 32px;
+    }
+
+    .bnr-img {
+        margin: 10px 0 5px 0;
+    }
+
+    .bnr-img img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 10px;
+    }
+
+    .alin-newslatter {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .newslatter-form p {
+        float: right;
+    }
+    /*--FIM--*/
+
+    /*--- banner da de captura de emial principal ---*/
+    .alin-newslatter {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*---FIM---*/
+
+    /*--- ALINHAMENTTO DOS FORMULÁRIOS DO CABELHO---*/
+    .box-form {
+        height: 130px;
+    }
+
+    .text-chamd-pag01 {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-top: 35px;
+        margin-left: 15px;
+        /*background: #ccc;*/
+    }
+
+    .text-chamd-pag01 h2 {
+        display: block;
+        float: left;
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: 700;
+    }
+
+    .text-chamd-tx-pag01 {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-top: 27px;
+        margin-left: 15px;
+        /*background: #ccc;*/
+    }
+
+    .text-chamd-tx-pag01 p {
+        text-align: center;
+        color: #fff;
+        font-size: 0.9em;
+    }
+
+    .box-form-pag01 form  {
+        width: 45%;
+        margin-top: 15px;
+        float: right;
+    }
+
+    .box-form-pag01 form input[type="email"] {
+        width: 52%;
+        float: left;
+        margin-top:7px;
+        padding: 10px 0 10px 5px;
+    }
+
+    .box-form-pag01 form input[type="submit"] {
+        width: 44%;
+        float: right;
+        margin-top: 3px;
+        margin-right: 10px;
+        background: #fff url(../imagens/icons/icons.png) 34px no-repeat ;
+        padding: 10px 0px 10px 25px;
+        font-size: 1em;
+        background-color:#0BBFD4;
+    }
+
+    .text-chamd {
+        display: block;
+        float: left;
+        width: 36%;
+        margin-top: 45px;
+        /*        background: #ccc;*/
+    }
+
+    .text-chamd h2 {
+        text-align: left;
+        display: block;
+        float: left;
+        color: #fff;
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+
+    .text-chamd-tx {
+        display: block;
+        float: left;
+        width: 25%;
+        margin-top: 35px;
+        margin-left: 15px;
+        /*background: #ccc;*/
+    }
+
+
+    .text-chamd-tx p {
+        text-align: center;
+        color: #fff;
+        font-size: 0.9em;
+    }
+
+    .box-form form {
+        width: 36%;
+        margin-top: 25px;
+        float: right;
+    }
+
+    .box-form form input[type="email"] {
+        width: 52%;
+        float: left;
+        margin-top:7px;
+        padding: 10px 0 10px 5px;
+    }
+
+    .box-form form input[type="submit"] {
+        width: 46%;
+        float: right;
+        margin-top: 2px;
+        background: #fff url(../imagens/icons/icons.png) 14px no-repeat ;
+        padding: 10px 0px 10px 25px;
+        font-size: 1em;
+        background-color:#0BBFD4;
+    }
+    /*FIM*/
+
+    /*	CORPO DO SITE*/
+    .main-cont {
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .art-popls li span {
+        margin: 27px 0 0 5px;
+    } 
+
+    .social-alinhament {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-icons  {
+        display: block;
+        float: right;
+        width: 211px;
+        padding-top: 10px;
+    }
+
+    .social-cont img {
+        margin: 25px 4%;
+    }
+
+    .art-princ h1 {
+        font-size: 1.6em;
+
+    }
+
+    .art-princ p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding: 10px 2% 0 2%;
+    }
+
+    /*Esterelização do texto da página dos artigos*/
+    .pagina-art p {
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        padding-top: 15px;
+        padding: 15px 0;
+    }
+
+    /*	newslatter e-amil e presente e-book*/
+    .newsletter img {
+        display: block;
+        width: 80%;
+        margin: auto;
+        padding-top: 15px;
+    }
+
+    .newsletter h3 {
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    .newsletter p {
+        padding: 15px 2% 15px 0;
+        font-size: 1em;
+        text-align: center;
+    }
+
+
+    .image-secao img {
+        width: 40%;
+        margin-top: 45px;
+        margin-left: 4px;
+    }
+
+    #alinha-email form {
+        display: block;
+        width:80%;
+    }
+
+    .box-newsllater form input[type="email"] {
+        float: left;
+        max-width: 58%;
+        padding: 15px 0 15px 8px;
+        margin: 13px 3px 0 0;
+    }
+
+    .box-newsllater #botao {
+        background: #fff url(../imagens/icons/icons.png) 10px no-repeat ;
+        width: 40%;
+        padding-left: 25px;
+        background-color: #0BBFD4;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .box-newsllater #botao p {
+        padding: 2px;
+        font-size: 1.1em;
+        font-weight: 600;
+        color: #fff;
+    }
+
+
+}
+
+/*FORMATOS PARA RESOLUÇÃO A PARTI DE 1366x768 */
+@media screen and (min-width: 1140px) {
+    .alinhamento {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .alin-banner {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .banner-princ h2 {
+        padding: 25px 0;
+        margin-top: 0px;
+        line-height: 37px;
+        font-size: 2em;
+    }
+
+    .bnr-img img {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        padding-top: 10px;
+    }
+
+    .text-banner2 p {
+        display: block;
+        width: 40%;
+        float: right;
+        text-align: center;
+        font-size: 1.2em;
+        padding: 5px 4% 15px 4%;
+        margin-top: -115px;
+    }
+
+    .alin-newslatter {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    .newslatter-form form {
+        width: 500px;
+        margin-top: 9px; 
+    }
+
+    .newslatter-form form input[type="email"] {
+        width: 270px;
+        margin-top: 7px;
+    }
+
+    .newslatter-form form input[type="submit"] {
+        width: 225px;
+        padding-left: 35px;
+        margin-top: 0px;
+        background: #fff url(../imagens/icons/icons.png)  20px no-repeat ;
+        background-color:#0BBFD4;
+    }
+
+    .newslatter-form p {
+        padding: 35px 2% 2px 0;
+    }
+
+    .box-form {
+        height: 110px;
+    }
+
+
+    .alin-newslatter {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
+    .newslatter-form form {
+        margin-right: 65px;
+    }
+
+    .newslatter-form p {
+        font-size: 1em;
+    }
+
+    .main-cont {
+        max-width: 1140px;
+        width: 100%;
+    }
+
+    /*-- ALINHAMENTO DA TOPO DA PÁGINA DOR ARTIGO --*/
+    .pagina-art {
+        padding-top: 0px;
+    }
+
+    #cont-princ {
+        width: 70%;
+        float: right;
+        padding: 0 2%;
+        margin-top: 20px;
+    }
+
+    .art-princ {
+
+        padding-bottom: 50px;
+
+    }
+
+    .top-titulo {
+        margin-top: -31px;
+    }
+
+    .art-princ h1 {
+        font-size: 1.7em;
+        margin-top: 10px;
+    }
+
+    .art-princ img {
+        width: 240px;
+        height: 120px;
+        float: left;
+        margin: 24px 10px 0 0;
+        border-left: 8px solid #0BDEB5;
+    }
+
+    .art-princ p {
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding-top: 15px;
+    }
+
+    /*Esterelização do texto da página dos artigos*/
+    .pagina-art h1 {
+        font-weight: 600;
+        font-size: 1.9em;
+        padding: 0;
+    }
+
+    .pagina-art h2 {
+        font-size: 1.4em;
+    }
+
+    .pagina-art p {
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        padding-top: 15px;
+    }
+
+    .art-princ p a {
+        color: #0a83ca;
+    }
+
+    .art-princ p a:hover {
+        color: #04649d;
+    }
+
+    .cl-direita {
+        width: 26%;
+        float: left;
+        margin-bottom: 50px;
+    }
+
+    .sobre-autor  {
+        width: 100%;
+        float: left;
+        padding: 10px 0;
+        background-color: #ecebea;
+        border: 1px solid #DDDCD8;
+    }
+
+    .sobre-autor h2 {
+        text-align: center;
+        border-bottom: 2px solid #ccc;
+        border-top: 2px solid #ccc;
+        margin: 3px 18%;
+        padding-top: 3px 0;
+    }
+    .sobre-autor img {
+        width: 100%;
+        padding: 5px 20px;
+
+    }
+
+    .sobre-autor p {
+        text-align: justify;
+        font-size: 1em;
+        padding: 10px 10px;
+    }
+
+    .sobre-autor p a {
+        color: #32c8ff;
+    }
+
+    .art-popls {
+        margin-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        float: left;
+        background-color: #F2F1EF;
+        border: 1px solid #DDDCD8;
+    }
+
+    .art-popls h2 {
+        background-color: #ccc;
+        text-align: center;
+        padding: 15px;
+        color: #939291;
+    }
+
+    .art-popls ul {
+        padding-left: 15px;
+        margin-top: 10px;
+    }
+
+    .art-popls ul li {
+        padding: 05px 0;
+        float: right;
+    }
+
+    .art-popls ul li a {
+        line-height: 1.5em;
+
+    }
+
+    .art-popls ul li a p {
+        color: #32c8ff;
+        width: 100%;
+        float: left;
+        padding-left: 25px;
+        margin-top: -60px;
+    }
+
+    .sobre-autor span {
+        margin-left: 05px;
+        color: #32c8ff;
+    }
+
+    .art-popls h2 span  {
+        margin-right: 10px;
+        color: #939291;
+    }
+
+
+
+    .art-popls li span {
+        margin: 35px 0 0 0;
+        color: #939291;
+        float: left;
+    }
+
+
+
+
+    /*NEWSLATTER*/
+    .newsletter {
+        width: 100%;
+        float: left;
+        background-color: #F2F1EF;
+        margin-top: 20px;
+        border: 1px solid #DDDCD8;
+        padding-bottom: 20px;
+    }
+
+    .newsletter h3 {
+        background-color: #465459;
+        padding: 15px 0;
+        font-size: 1.3em;
+        color: #fff;
+        text-align: center;
+    }
+
+    .newsletter p {
+        padding: 20px 15px;
+        font-size: 1em;
+        color: #465459;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    .newsletter form {
+        margin-top: 30px;
+    }
+
+    .social-alinhament {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .social-icons  {
+        display: block;
+        float: right;
+        width: 211px;
+        padding-top: 10px;
+    }
+
+    .social-cont img {
+        margin: 25px 4%;
+    }
+
+    .box-newsllater #botao {
+        background: #fff url(../imagens/icons/icons.png) 18px no-repeat ;
+        width: 40%;
+        padding-left: 25px;
+        background-color: #0BBFD4;
+        float: left;
+        margin-top: 10px;
+    }
+
+    .box-newsllater #botao p {
+        padding: 2px;
+        font-size: 1.2em;
+        font-weight: 600;
+        color: #fff;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
